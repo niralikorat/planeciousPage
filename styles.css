@@ -215,7 +215,7 @@
   }
   .bgSec1{
     background-color: #e7fffa;
-    height: 90vh;
+    height: 100vh;
     
     display: flex;
     justify-content: center;
@@ -225,7 +225,7 @@
   }
   .bgSec2{
     background-color: #cef6fe;
-    height: 90vh;
+    height: 100vh;
     /* width: 100%; */
     display: flex;
     justify-content: center;
@@ -235,7 +235,7 @@
   }
   .bgSec3{
     background-color: #e7fffa;
-    height: 90vh;
+    height: 100vh;
    
     display: flex;
     justify-content: center;
@@ -246,9 +246,12 @@
 
 /* Base styles for text */
 .largeText {
-    font-size: 82px; /* Default font size */
+    font-size: 128px; /* Default font size */
+
   }
-  
+  .letterSpacing{
+    letter-spacing: 40px;
+  }
   .secondaryLarge {
     font-size: 36px; /* Default font size */
   }
