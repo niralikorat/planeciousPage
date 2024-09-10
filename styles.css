@@ -154,6 +154,7 @@
     .ytVideo {
       width: 48%; /* Equivalent to md:w-2/5 */
     }
+  
   }
   
   /* Small devices and up (min-width: 640px) */
@@ -161,6 +162,7 @@
     .ytVideo {
       height: 340px; /* Equivalent to sm:h-[340px] */
     }
+
   }
   
   /* Extra-large devices and up (min-width: 1280px) */
@@ -277,23 +279,53 @@
   /* Medium devices (tablets) */
   @media (max-width: 768px) {
     .largeText {
-      font-size: 60px; /* Adjusted for smaller screens */
+      font-size: 48px; /* Further adjusted for mobile screens */
+      font-family: "Gantari", sans-serif;
+    }
+    .letterSpacing{
+      letter-spacing: 12px;
+    }
+    .container{
+      gap: 20px;
     }
   
     .secondaryLarge {
-      font-size: 30px; /* Adjusted for smaller screens */
+      font-size: 16px; /* Further adjusted for mobile screens */
+      font-family: "Gantari", sans-serif;
     }
   }
+  @media(min-width: 768px) and (max-width: 1280px){
+    .largeText {
+      font-size: 80px;
+      font-family: "Gantari", sans-serif;
+    }
+    .letterSpacing{
+      letter-spacing: 20px;
+    }
+    .container{
+      gap: 40px;
+    }
   
+    .secondaryLarge {
+      /* font-size: 32px; Further adjusted for mobile screens */
+      font-family: "Gantari", sans-serif;
+    }
+  }
   /* Small devices (mobile phones) */
   @media (max-width: 480px) {
     .largeText {
-      font-size: 40px; /* Further adjusted for mobile screens */
+      font-size: 32px; /* Further adjusted for mobile screens */
       font-family: "Gantari", sans-serif;
+    }
+    .letterSpacing{
+      letter-spacing:10px;
+    }
+    .container{
+      gap: 20px;
     }
   
     .secondaryLarge {
-      font-size: 24px; /* Further adjusted for mobile screens */
+      font-size: 16px; /* Further adjusted for mobile screens */
       font-family: "Gantari", sans-serif;
     }
   
