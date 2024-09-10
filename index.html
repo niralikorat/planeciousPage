@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Hero Section with Video Background</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <nav class="nav">
+        <img src="Planecious.svg" alt="Planecious" class="logo">
+        <a href="https://www.linkedin.com/groups/8147680/" target="_blank" rel="noopener noreferrer" class="primary-button">
+            Join Now
+          </a>
+    </nav>
+    <!-- Background Video -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="heroLargeDevice.mp4" type="video/mp4" media="(min-width: 769px)">
+      <source src="heroMobile.mp4" type="video/mp4" media="(max-width: 768px)">
+      Your browser does not support the video tag.
+    </video>
+  
+    <!-- Content Overlay -->
+  </section>
+  
+<section class="walkTheTalk">
+    <p class="walkTheTalkHeading textCenter">Walk The Talk</p>
+    <div class="center">
+        <div class="videoList">
+            <iframe class="ytVideo" src="https://www.youtube.com/embed/-EAfiPdMoTY?si=CVqBQIIWCfqySxFz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="ytVideo" src="https://www.youtube.com/embed/THWwSB6GnFE?si=y3ctTvO9DjXgltaz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="ytVideo" src="https://www.youtube.com/embed/Cl4W9d1xpNs?si=zBMBSiHw5CAmW-2C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="ytVideo" src="https://www.youtube.com/embed/6Reaa3gH9dc?si=e-y0Odx_mjQu66Hl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="ytVideo" src="https://www.youtube.com/embed/WJUo697afdc?si=J5P-MWG5oTRaf6FY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+            </div>
+    </div>
+   
+        <div class="centered-container">
+            <a href="https://www.youtube.com/@PlaneciousLeaders" target="_blank" rel="noopener noreferrer" class="primary-button">
+              View More
+            </a>
+          </div>
+          
+</section>
+<section class="bgSec1 ">
+<p class="primaryText largeText lightFont textCenter">WE'RE</p>
+<p class="secondaryText secondaryLarge textCenter">A HYPER-CONSCIOUS AGENCY FOR THE PLANET-CONCIOUS</p>
+<p class="primaryText largeText boldFont textCenter">PLANECIOUS</p>
+<p class="secondaryText secondaryLarge textCenter">INITIATIVE BY GRACIA MARCOM</p>
+</section>
+<section class="bgSec2 ">
+    <p class="primaryText largeText lightFont textCenter">Y<span class="boldFont">OUR</span></p>
+    <p class="secondaryText secondaryLarge textCenter">STARTS WITH OUT PLANET</p>
+    <p class="primaryText largeText lightFont textCenter"><span class="boldFont">PLAN</span>ET</p>
+ 
+    </section>
+    <section class="bgSec3 ">
+        <p class="primaryText largeText lightFont textCenter"><span class="boldFont">BIG</span> TALK</p>
+        <p class="secondaryText secondaryLarge textCenter ">WE ARE GROUP OF COMPASSIONATE AND MISSION-DRIVEN SUSTAINABLE MARKETING SPECIALISTS. OUR PASSION LIES IN CRAFTING BRAND NARRATIVE FOR COMPANIES THAT ASPIRE TO CREATE POSITIVE CHANGE IN THE WORLD.</p>
+        <p class="primaryText largeText lightFont textCenter"><span class="boldFont">PLAN</span>ET</p>
+     
+        </section>
+        <div class"" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content:center">
+            <p class=" textCenter">© 2024 Planecious. All rights reserved.</p>
+          </div>
+        <script>
+            
+document.addEventListener("DOMContentLoaded", function() {
+  const nav = document.querySelector(".nav");
+
+  function handleScroll() {
+    if (window.scrollY > 50) { // Change this value to trigger the effect earlier or later
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  }
+
+  // Listen for scroll events
+  window.addEventListener("scroll", handleScroll);
+
+  // Initial check in case the page is loaded with a scroll position
+  handleScroll();
+});
+
+        </script>
+  <script src="scripts.js"></script>
+</body>
+</html>

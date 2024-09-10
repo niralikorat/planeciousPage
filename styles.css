@@ -1,0 +1,327 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  
+  /* Content Overlay */
+  .hero-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  .videoList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+  }
+  .center{
+    display: flex;
+    justify-content: center;
+  }
+  .walkTheTalk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    padding: 80px 0px;
+  }
+/* Base styles */
+.walkTheTalkHeading {
+    font-weight: 600; /* Equivalent to font-semibold */
+    font-size: 3rem; /* Equivalent to text-5xl */
+    line-height: 1.2; /* Adjust line height for better readability */
+    color: #056980; /* Replace #your-color with your desired primary color */
+    padding: 40px 0px;
+    margin-bottom: 20px;
+  }
+  
+  /* Medium devices and up (min-width: 768px) */
+  @media (min-width: 768px) {
+    .walkTheTalkHeading {
+      font-size: 4.5rem; /* Equivalent to md:text-7xl */
+    }
+  }
+  
+  /* Base styles */
+.ytVideo {
+    width: 90%; /* Equivalent to w-full */
+    height: 100%;  /* Equivalent to h-full */
+  }
+  
+  /* Medium devices and up (min-width: 768px) */
+  @media (min-width: 768px) {
+    .ytVideo {
+      width: 40%; /* Equivalent to md:w-2/5 */
+    }
+  }
+  
+  /* Small devices and up (min-width: 640px) */
+  @media (min-width: 640px) {
+    .ytVideo {
+      height: 340px; /* Equivalent to sm:h-[340px] */
+    }
+  }
+  
+  /* Extra-large devices and up (min-width: 1280px) */
+  @media (min-width: 1280px) {
+    .ytVideo {
+      height:400px; /* Equivalent to xl:h-[400px] */
+      width: 40%;
+    }
+  }
+  /* Container for centering content */
+.centered-container {
+    display: flex; /* Equivalent to flex */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: center; /* Equivalent to justify-center */
+    padding-top: 3rem; /* Equivalent to py-12 */
+    padding-bottom: 3rem; /* Equivalent to py-12 */
+  }
+  
+  /* Styles for the button */
+  .primary-button {
+    background-color: #37ACC5; /* Replace with your primary background color */
+    padding: 0.75rem 1.5rem; /* Equivalent to px-6 py-3 */
+    border-radius: 1.5rem; /* Equivalent to rounded-3xl */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #fff; /* Equivalent to text-white */
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+    transition: transform 0.2s; /* Smooth hover scaling */
+    text-decoration: none; /* Ensures no underline */
+  }
+  
+  /* Hover effect for the button */
+  .primary-button:hover {
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+  }
+  
+
+  .primaryText{
+    color: #3dacbd;
+  }
+  .secondaryText{
+    color: #8296a1;
+  }
+  .bgSec1{
+    background-color: #e7fffa;
+    height: 90vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  .bgSec2{
+    background-color: #cef6fe;
+    height: 90vh;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  .bgSec3{
+    background-color: #e7fffa;
+    height: 90vh;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+
+/* Base styles for text */
+.largeText {
+    font-size: 82px; /* Default font size */
+  }
+  
+  .secondaryLarge {
+    font-size: 36px; /* Default font size */
+  }
+  
+  .boldFont {
+    font-weight: 800; /* Default font weight */
+  }
+  
+  .lightFont {
+    font-weight: 100; /* Default font weight */
+  }
+  
+  .textCenter {
+    text-align: center;
+    max-width: 1200px; /* Default max width */
+  }
+  
+  /* Responsive styles */
+  
+  /* Medium devices (tablets) */
+  @media (max-width: 768px) {
+    .largeText {
+      font-size: 60px; /* Adjusted for smaller screens */
+    }
+  
+    .secondaryLarge {
+      font-size: 30px; /* Adjusted for smaller screens */
+    }
+  }
+  
+  /* Small devices (mobile phones) */
+  @media (max-width: 480px) {
+    .largeText {
+      font-size: 40px; /* Further adjusted for mobile screens */
+    }
+  
+    .secondaryLarge {
+      font-size: 24px; /* Further adjusted for mobile screens */
+    }
+  
+    .textCenter {
+      max-width: 90%; /* More flexible on smaller screens */
+    }
+  }
+  
+
+  /* .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  .logo{
+    width: 200px;
+  } */
+  /* Base styles for the navigation bar */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+    z-index: 1000; /* Ensure it stays on top of other content */
+  }
+  
+  .nav.scrolled {
+    background-color: white; /* Background color when scrolled */
+  }
+  
+  .logo {
+    width: 200px;/* Adjust logo size as needed */
+  }
+  
+  .primary-button {
+    background-color: #3dacbd; /* Replace with your primary button color */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Responsive adjustments (optional) */
+  @media (max-width: 768px) {
+    .logo {
+      width: 160px; /* Adjust logo size for smaller screens */
+    }
+  
+    .primary-button {
+        padding: 0.5rem 1rem;
+      font-size: 0.875rem; /* Smaller button text for smaller screens */
+    }
+    .nav {
+       
+        padding: 10px 20px;
+ 
+      }
+  }
+  
