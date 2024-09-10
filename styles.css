@@ -253,11 +253,14 @@
     letter-spacing: 40px;
   }
   .secondaryLarge {
-    font-size: 36px; /* Default font size */
+    font-size: 32px; /* Default font size */
   }
   
   .boldFont {
     font-weight: 800; /* Default font weight */
+  }
+  .semiBold{
+    font-weight: 300;
   }
   
   .lightFont {
@@ -359,3 +362,13 @@
       }
   }
   
+
+
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+  }
