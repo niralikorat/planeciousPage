@@ -93,6 +93,18 @@
     /* justify-content: center; */
     align-items: start;
     align-content: start;
+    /* padding: 0px 220px; */
+  }
+  @media (max-width: 768px){
+    .videoList{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        /* justify-content: center; */
+        
+        align-items: start;
+        align-content: start;
+      }
   }
   .center{
     display: flex;
@@ -146,9 +158,18 @@
   /* Extra-large devices and up (min-width: 1280px) */
   @media (min-width: 1280px) {
     .ytVideo {
-      height:400px; /* Equivalent to xl:h-[400px] */
-      width: 49%;
+       /* Equivalent to xl:h-[400px] */
+      width: 48%;
     }
+    .videoList{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        /* justify-content: center; */
+        align-items: start;
+        align-content: start;
+        padding: 0px 200px;
+      }
   }
   /* Container for centering content */
 .centered-container {
