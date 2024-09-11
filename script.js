@@ -38,15 +38,3 @@ document.addEventListener("DOMContentLoaded", function() {
 // });
 
 
-window.addEventListener('pageshow', function (event) {
-  const videoElement = document.querySelector('.hero-video');
-
-  if (videoElement) {
-    // Reset video and ensure it starts playing
-    videoElement.currentTime = 0; // Reset to start
-    videoElement.muted = true; // Ensure video is muted
-    videoElement.play().catch((error) => {
-      console.log('Error playing video:', error);
-    });
-  }
-});
