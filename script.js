@@ -36,3 +36,16 @@ window.addEventListener('load', function() {
   // Update on window resize
   window.addEventListener('resize', updatePoster);
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const videoElement = document.querySelector('.hero-video');
+
+  if (videoElement) {
+    // Force reload the video source to ensure it starts playing
+    videoElement.load(); // Reload the video
+    videoElement.play().catch((error) => {
+      console.log('Video playback failed:', error);
+    });
+  }
+});
