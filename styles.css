@@ -23,9 +23,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('https://img.freepik.com/free-photo/mysterious-forest-landscape_181624-35895.jpg?t=st=1726049837~exp=1726053437~hmac=09f0554d9e6051f3171f8dfd543c69fc66dbabec95bf23c657cccdfcdbcae344&w=740'); /* Fallback background image */
-    background-size: cover;
-    background-position: center;
+ 
   }
 
   .hero.video-loaded {
