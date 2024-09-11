@@ -217,8 +217,8 @@
   }
   .bgSec1{
     background-color: #e7fffa;
-    height: 100vh;
-    
+    /* height: 100vh; */
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -227,8 +227,9 @@
   }
   .bgSec2{
     background-color: #cef6fe;
-    height: 100vh;
+    /* height: 100vh; */
     /* width: 100%; */
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -237,8 +238,8 @@
   }
   .bgSec3{
     background-color: #e7fffa;
-    height: 100vh;
-   
+    /* height: 100vh; */
+    padding: 80px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
